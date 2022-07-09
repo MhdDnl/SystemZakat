@@ -100,38 +100,25 @@ void IncomeMenu()
 	cout << "Please Enter Your Choice:";
 
 }
+
 bool login() {
 	string username;
 	int password;
-	
-	cout << "Please enter your username:"; cin >> username;
-	cout << "Please enter your password:"; cin >> password;
-	if (password == 123 && username == "up") {
-		return true;
-	}
-	else {
-		return false;
-	}
+	int count = 0;
+	while (count < 3) {
+		cout << "Please enter your username:"; cin >> username;
+		cout << "Please enter your password:"; cin >> password;
+		if (password == 123 && username == "up") {
+			return true;
+		}
+		else {
+			count++;
+			cout << "Wrong username or password\n";
+		}
 
-	/*count++;
-	if (count == 3) {
-		isTrue = false;
 	}
-	else {
-		cout << "===============================================" << endl;
-		cout << "          Thanks For Using Our System          " << endl;
-		cout << "===============================================" << endl;
-		cout << "You been kicked out from system due to false " << endl;
-		cout << "id number and password,Please try again" << endl;
-		cout << "                                               " << endl;
-		cout << "                                               " << endl;
-		cout << "Note:You have 3 login attempt                  " << endl;
-		cout << "===============================================" << endl;
-		cout << "Do you want to try again(1(yes)/2(no)): "; cin >> agin;
-		system("cls");
-		if (agin == 1) { goto home; }
-		else { isTrue = false; }
-	}*/
+	return false;
+
 }
 
 void run_app() {
