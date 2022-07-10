@@ -96,3 +96,13 @@ void IncomeMenu()
 	cout << "Please Enter Your Choice:";
 
 }
+
+void BusinessMenu() {
+	cout << "============================================" << endl;
+	cout << "       Welcome to Business Zakat System       " << endl;
+	cout << "============================================" << endl;
+	cout << "1.Kaedah Modal Kerja                        " << endl;
+	cout << "2.Kaedah Untung Rugi                         " << endl;
+	cout << "============================================" << endl;
+	cout << "Please Enter Your Choice:   ";
+}
