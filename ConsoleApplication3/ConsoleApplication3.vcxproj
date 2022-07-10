@@ -141,11 +141,13 @@
   <ItemGroup>
     <ClCompile Include="app.cpp" />
     <ClCompile Include="ConsoleApplication3.cpp" />
+    <ClCompile Include="login.cpp" />
     <ClCompile Include="PrintMenus.cpp" />
     <ClCompile Include="zakat.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="app.h" />
+    <ClInclude Include="login.h" />
     <ClInclude Include="PrintMenus.h" />
     <ClInclude Include="zakat.h" />
   </ItemGroup>
